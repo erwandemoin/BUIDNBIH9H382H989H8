@@ -1,6 +1,9 @@
-import subprocess
 
-# Liste des modules à importer
+import subprocess
+import base64
+from base64 import b64decode, b64encode
+
+
 importList = [
     "requests",
     "pycryptodome",
@@ -19,7 +22,7 @@ importList = [
     "datetime",
     "ctypes",
     "Crypto.Hash.SHA256",
-    "Crypto.Protocol.KDF.HKDF",
+    "Crypto.Protocol.KDF",
     "win32crypt",
     "Crypto.Cipher.AES",
     "base64",
@@ -27,6 +30,7 @@ importList = [
     "marshal",
     "random"
 ]
+
 
 for imprt in importList:
     try:
